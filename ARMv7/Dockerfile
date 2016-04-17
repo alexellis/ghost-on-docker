@@ -14,6 +14,7 @@ RUN chown ghost:www-data -R ghost/*
 USER ghost
 WORKDIR /var/www/ghost
 RUN npm install -g pm2
+RUN npm install sqlite3
 
 RUN npm install
 
