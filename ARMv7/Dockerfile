@@ -17,5 +17,8 @@ RUN npm install -g pm2
 RUN npm install sqlite3
 
 RUN npm install
-
+EXPOSE 2368
+EXPOSE 2369
+RUN ls && pwd
+RUN sed -e s/127.0.0.1/0.0.0.0/g ./config.example.js > ./config.js
 CMD ["node", "index.js"]
