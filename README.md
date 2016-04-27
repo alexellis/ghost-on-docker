@@ -94,7 +94,7 @@ Head over to [my blog](http://blog.alexellis.io/self-hosting-on-a-pi/) and post 
 
 #### Just want to learn Docker?
 
-Start today with a dozen progressive labs with my [Hands-on Docker tutorial](http://blog.alexellis.io/handsondocker/)
+Start learning today with a dozen progressive labs with my [Hands-on Docker tutorial](http://blog.alexellis.io/handsondocker/)
 
 #### How I self-host my blog for free
 
