@@ -3,9 +3,12 @@ FROM alexellis2/node4.x-arm:latest
 USER root
 WORKDIR /var/www/
 RUN mkdir -p ghost
-RUN apt-get update && apt-get -qy install wget unzip
-RUN wget https://ghost.org/zip/ghost-0.7.9.zip
-RUN unzip ghost-0.7.9.zip -d ghost
+RUN apt-get update && apt-get -qy install wget unzip && \
+    wget https://ghost.org/zip/ghost-0.7.9.zip && \
+    unzip ghost-0.7.9.zip -d ghost && \
+    apt-get -y remove wget unzip && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN useradd ghost -m -G www-data -s /bin/bash
 RUN chown ghost:www-data .
 RUN chown ghost:www-data ghost
