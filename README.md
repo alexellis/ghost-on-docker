@@ -78,8 +78,26 @@ $ ab -c 4 -n 1000 http://192.168.0.240/
 
 You can play with the numbers to see how the blog performs under different conditions, you could also try typing in `docker stats` to see what kind of load the Docker container is creating.
 
+### Coming soon
+
+* *docker-compose.yml* file
+ * adding volume support to add persistence of your posts (current available through built-in admin page)
+ * ramp-up performance with a purpose-built Nginx Docker container to sit in front of your blog and take the load off.
+* Full instructions for Raspberry PI Model B 2/3
+ * set up Arch Linux, Docker and Ghost
+
 ### Questions/comments?
 
-Head over to my blog and post a comment/question, or if you've found a bug raise an issue on Github.
+Head over to [my blog](http://blog.alexellis.io/self-hosting-on-a-pi/) and post a comment/question, or if you've found a bug raise an issue on Github.
 
-[Self-hosting on a Raspberry PI](http://blog.alexellis.io/self-hosting-on-a-pi/)
+### See also:
+
+#### Just want to learn Docker?
+
+Start today with 12 progressive labs with my [Hands-on Docker tutorial](http://blog.alexellis.io/handsondocker/)
+
+#### How I self-host my blog for free
+
+> [Self-hosting on a Raspberry PI](http://blog.alexellis.io/self-hosting-on-a-pi/)
+
+> [How I use dynamic DNS for alexellis.io](http://blog.alexellis.io/alexellis-io/)
