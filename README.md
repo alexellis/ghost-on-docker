@@ -4,11 +4,17 @@
 
 Recipes for building and running Ghost blogging platform on Docker
 
+> Find out more about [Ghost](https://ghost.org) here
+
+Ghost is an elegant and minimal blogging platform that focus on simplicity. One of its most attractive features is its Markdown editor. It's also fully hackable running on Node.js with the [Handlebars](http://handlebarsjs.com) view-engine.
+
 *This project is work-in-progress but all the blog images are fully working*
 
 ### Getting started
 
 You can pull the ARMv7 image (for PI2/3) straight from the Docker Hub `docker pull alexellis2/ghost-on-arm:armv7` or build it yourself using the Dockerfiles as listed.
+
+> Please support the project by giving it a **Star**.
 
 ### Dockerfiles
 
@@ -19,7 +25,7 @@ These are all based upon Node 4.x, pick the architecture for your computer/serve
   * Based upon Alpine Linux
   * Very fast build time and requests/per second compared to a Raspberry PI.
 
-* ARMv7 (Raspberry PI 2 / 3) 
+* ARMv7 (Raspberry PI 2 / 3)
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/ARMv7/Dockerfile)
  * Building SQLite npm module on PI 2 takes about 7 minutes
  * semver and other required modules will take quite some time
@@ -34,6 +40,6 @@ These are all based upon Node 4.x, pick the architecture for your computer/serve
 
 ### Questions/comments?
 
-Head over to my blog and post a comment/question.
+Head over to my blog and post a comment/question, or if you've found a bug raise an issue on Github.
 
 [Self-hosting on a Raspberry PI](http://blog.alexellis.io/self-hosting-on-a-pi/)
