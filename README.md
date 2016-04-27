@@ -23,13 +23,13 @@ These are all based upon Node 4.x, pick the architecture for your computer/serve
 * Regular PC/Laptop - x86_x64
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/x86_64/Dockerfile)
   * Based upon Alpine Linux
-  * Very fast build time and requests/per second compared to a Raspberry PI.
+  * Very fast build time and high amount of requests/per second compared to a Raspberry PI, my Core i5 NUC with 16GB RAM running a single container gave around 85-90 requests/per second.
 
-Example usage:
+  Example usage:
 
-```
-$ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:latest
-```
+  ```
+  $ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:latest
+  ```
 
 * ARMv7 (Raspberry PI 2 / 3)
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/ARMv7/Dockerfile)
@@ -50,11 +50,11 @@ $ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:latest
  * Building SQLite npm module on PI Zero takes about 16 minutes
  * Once up and running performs 2-3 requests per second, use of Nginx or another cache is highly recommended.
 
-Example usage:
+  Example usage:
 
-```
-$ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:armv6
-```
+  ```
+  $ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:armv6
+  ```
 
 ### Benchmarking
 
