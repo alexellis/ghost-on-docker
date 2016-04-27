@@ -1,6 +1,8 @@
 # ghost-on-docker
 
-Recipe for building and running Ghost blogging platform on Docker
+![Ghost](https://raw.githubusercontent.com/alexellis/ghost-on-docker/master/static/ghost_small.png)
+
+Recipes for building and running Ghost blogging platform on Docker
 
 *This project is work-in-progress but all the blog images are fully working*
 
