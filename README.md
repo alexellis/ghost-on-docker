@@ -2,7 +2,7 @@
 
 ![Ghost](https://raw.githubusercontent.com/alexellis/ghost-on-docker/master/static/ghost_small.png)
 
-Recipes for building and running Ghost blogging platform on Docker
+Pair Docker and Ghost for the perfect platform to run your blog!
 
 > Find out more about [Ghost](https://ghost.org) here
 
