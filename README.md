@@ -10,7 +10,7 @@ Recipe for building and running Ghost blogging platform on Docker
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/ARMv7/Dockerfile)
 * ARMv6 (Raspberry PI A/B/B+/Zero)
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/ARMv6/Dockerfile)
- * Note: ARMv6, especially models with < 512mb RAM will require a swapfile for building the *SQLite* npm module.
+ * Note: ARMv6, especially models with < 512mb RAM will require a swapfile for building the *SQLite* npm module. [Creating SWAP file](https://wiki.archlinux.org/index.php/swap)
 
 ### Questions/comments?
 
