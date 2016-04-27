@@ -88,7 +88,7 @@ You can play with the numbers to see how the blog performs under different condi
 
 ### Questions/comments?
 
-Head over to [my blog](http://blog.alexellis.io/self-hosting-on-a-pi/) and post a comment/question, or if you've found a bug raise an issue on Github.
+Head over to [my blog](http://blog.alexellis.io/ghost-on-docker-5mins/) and post a comment/question, or if you've found a bug raise an issue on Github.
 
 ### See also:
 
