@@ -1,0 +1,10 @@
+version: '2'
+services:
+  blog:
+    build: .
+    ports:
+    - "80:2368"
+    volumes:
+    - /var/www/ghost/content/data
+    - /var/www/ghost/content/apps
+    - /var/www/ghost/content/images

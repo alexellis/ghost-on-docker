@@ -25,5 +25,9 @@ RUN ls && pwd
 ENV NODE_ENV production
 
 RUN sed -e s/127.0.0.1/0.0.0.0/g ./config.example.js > ./config.js
-CMD ["pm2", "start", "index.js", "--name", "blog", "--no-daemon"]
 
+VOLUME ["/var/www/ghost/content/apps"]
+VOLUME ["/var/www/ghost/content/data"]
+VOLUME ["/var/www/ghost/content/images"]
+
+CMD ["pm2", "start", "index.js", "--name", "blog", "--no-daemon"]
