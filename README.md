@@ -30,6 +30,11 @@ These are all based upon Node 4.x, pick the architecture for your computer/serve
   ```
   $ docker run --name blog -d -p 80:2368 alexellis2/ghost-on-docker:latest
   ```
+  Or use the recently added [Docker Compose file](https://github.com/alexellis/ghost-on-docker/blob/master/x86_64/docker-compose.yml) for even less fuss:
+  
+  ```
+  $ docker-compose up -d
+  ```
 
 * ARMv7 (Raspberry PI 2 / 3)
  * [Dockerfile](https://github.com/alexellis/ghost-on-docker/blob/master/ARMv7/Dockerfile)
