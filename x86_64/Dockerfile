@@ -4,8 +4,8 @@ USER root
 WORKDIR /var/www/
 RUN mkdir -p ghost
 RUN apk --update add unzip wget bash && \
-    wget https://ghost.org/zip/ghost-0.7.9.zip --no-check-certificate && \
-    unzip ghost-0.7.9.zip -d ghost
+    wget https://ghost.org/zip/ghost-0.8.0.zip --no-check-certificate && \
+    unzip ghost-*.zip -d ghost
 RUN addgroup www-data
 RUN adduser ghost -G www-data -S /bin/bash
 RUN chown ghost:www-data .
