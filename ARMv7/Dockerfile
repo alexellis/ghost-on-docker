@@ -4,8 +4,8 @@ USER root
 WORKDIR /var/www/
 RUN mkdir -p ghost
 RUN apt-get update && apt-get -qy install wget unzip && \
-    wget https://ghost.org/zip/ghost-0.7.9.zip && \
-    unzip ghost-0.7.9.zip -d ghost && \
+    wget https://ghost.org/zip/ghost-0.8.0.zip && \
+    unzip ghost-*.zip -d ghost && \
     apt-get -y remove wget unzip && \
     rm -rf /var/lib/apt/lists/*
 
