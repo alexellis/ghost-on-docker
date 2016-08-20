@@ -1,11 +1,17 @@
-FROM mhart/alpine-node:4
+FROM mhart/alpine-node:4.5
+
+RUN apk --update add unzip curl
 
 USER root
+WORKDIR /root/
+
 WORKDIR /var/www/
 RUN mkdir -p ghost
-RUN apk --update add unzip wget bash && \
-    wget https://ghost.org/zip/ghost-0.8.0.zip --no-check-certificate && \
-    unzip ghost-*.zip -d ghost
+
+RUN curl -sSLO https://ghost.org/zip/ghost-0.9.0.zip && \
+    unzip ./ghost-0.9.0.zip -d ghost && \
+    rm ./ghost-0.9.0.zip
+
 RUN addgroup www-data
 RUN adduser ghost -G www-data -S /bin/bash
 RUN chown ghost:www-data .
@@ -15,7 +21,7 @@ RUN npm install -g pm2
 
 USER ghost
 WORKDIR /var/www/ghost
-RUN /bin/bash -c "time (npm install sqlite3)"
+RUN npm install sqlite3
 RUN npm install
 
 EXPOSE 2368
