@@ -1,0 +1,22 @@
+version: "2.0"
+services:
+  blog:
+    ports:
+      - "2368:2368"
+    build: "./blog.alexellis.io/"
+    volumes:
+      - ghost_apps:/var/www/ghost/content/apps
+      - ghost_data:/var/www/ghost/content/data
+      - ghost_images:/var/www/ghost/content/images
+      - ghost_themes:/var/www/ghost/content/themes
+    restart: always
+
+volumes:
+   ghost_apps:
+      driver: local
+   ghost_data:
+      driver: local
+   ghost_images:
+      driver: local
+   ghost_themes:
+      driver: local
