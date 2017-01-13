@@ -8,9 +8,9 @@ WORKDIR /root/
 WORKDIR /var/www/
 RUN mkdir -p ghost
 
-RUN curl -sSLO https://ghost.org/zip/ghost-0.9.0.zip && \
-    unzip ./ghost-0.9.0.zip -d ghost && \
-    rm ./ghost-0.9.0.zip
+RUN curl -sSLO https://ghost.org/zip/ghost-0.11.3.zip && \
+    unzip ./*.zip -d ghost && \
+    rm ./*.zip
 
 RUN addgroup www-data
 RUN adduser ghost -G www-data -S /bin/bash
