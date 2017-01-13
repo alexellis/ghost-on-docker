@@ -8,7 +8,7 @@ WORKDIR /root/
 WORKDIR /var/www/
 RUN mkdir -p ghost
 
-RUN curl -sSLO https://ghost.org/zip/ghost-0.11.3.zip && \
+RUN curl -sSLO https://github.com/TryGhost/Ghost/releases/download/0.11.4/Ghost-0.11.4.zip && \
     unzip ./*.zip -d ghost && \
     rm ./*.zip
 
