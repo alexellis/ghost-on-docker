@@ -1,6 +1,6 @@
 NS = alexellis2
-VERSION ?= 0.11.2
-REPO = ghost-armv6
+VERSION ?= armv6-0.11.8
+REPO = ghost-on-docker
 
 .PHONY: build push shell run start stop rm release
 
