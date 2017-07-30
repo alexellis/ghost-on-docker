@@ -10,6 +10,16 @@ Ghost is an elegant and minimal blogging platform that focus on simplicity. One 
 
 *This project is work-in-progress but all the blog images are fully working*
 
+## Ghost 1.0
+
+Ghost 1.0 was released in July 2017 you can find the [Dockerfile](https://github.com/alexellis/ghost-on-docker/tree/master/1.0/x86_64) here and a [Getting Started blog post here](https://blog.alexellis.io/try-ghost-1-0-in-docker/). 
+
+For now I'd still recommend using Ghost 0.11.x which has better support for running in Docker under a known configuration. Check back soon for more on Ghost 1.0.
+
+## Ghost 0.11.x
+
+The rest of these instructions are for the version of Ghost running at https://blog.alexellis.io and many other sites.
+
 ### Getting started
 
 You can pull the ARMv7 image (for PI2/3) straight from the Docker Hub `docker pull alexellis2/ghost-on-arm:armv7` or build it yourself using the Dockerfiles as listed.
@@ -83,13 +93,17 @@ $ ab -c 4 -n 1000 http://192.168.0.240/
 
 You can play with the numbers to see how the blog performs under different conditions, you could also try typing in `docker stats` to see what kind of load the Docker container is creating.
 
-### Coming soon
+### Taking it further
 
-* *docker-compose.yml* file
- * adding volume support to add persistence of your posts (current available through built-in admin page)
- * ramp-up performance with a purpose-built Nginx Docker container to sit in front of your blog and take the load off.
-* Full instructions for Raspberry PI Model B 2/3
- * set up Arch Linux, Docker and Ghost
+* Learn how to apply caching on your blog with NGinx.
+
+[Boost your site's performance and save money with NGinx](https://blog.alexellis.io/save-and-boost-with-nginx/)
+
+* Use Docker volumes to safely upgrade your blog and preserve your data
+
+[Keeping Shipping your blog with Docker volumes](https://blog.alexellis.io/keeping-shipping-your-blog/)
+
+There is also an example [docker-compose.yml](https://github.com/alexellis/ghost-on-docker/blob/master/blog/docker-compose.yml) file in this repository which you can use as a template for mounting a persistent volume. 
 
 ### Questions/comments?
 
