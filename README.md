@@ -22,7 +22,9 @@ The rest of these instructions are for the version of Ghost running at https://b
 
 ### Getting started
 
-You can pull the ARMv7 image (for PI2/3) straight from the Docker Hub `docker pull alexellis2/ghost-on-arm:armv7` or build it yourself using the Dockerfiles as listed.
+You can pull the ARMv7 image (for PI2/3) straight from the Docker Hub `docker pull alexellis2/ghost-on-arm:armv7`. The image for your PC, laptop or cloud host is - `alexellis2/ghost-on-docker:latest`.
+
+To get the latest and greatest versions you can build your own image using the Dockerfile provided. If you'd like to help maintain or test new versions please do so through pull requests. 
 
 > Please support the project by giving it a **Star**.
 
